@@ -1,0 +1,16 @@
+
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+
+// Create your own map
+$custom-colors: (
+  "navbarcolor": #4f518c
+);
+
+// Merge the maps
+$theme-colors: map-merge($custom-colors, $theme-colors);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

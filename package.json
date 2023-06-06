@@ -1,0 +1,23 @@
+{
+  "name": "usabilidad-y-accesibilidad-grupo-11",
+  "version": "1.0.0",
+  "description": "Repositorio del grupo 11 para las tareas de la asignatura Usabilidad y Accesibilidad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alu0101239187/Usabilidad-y-Accesibilidad-Grupo-11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0101239187/Usabilidad-y-Accesibilidad-Grupo-11/issues"
+  },
+  "homepage": "https://github.com/alu0101239187/Usabilidad-y-Accesibilidad-Grupo-11#readme",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}
