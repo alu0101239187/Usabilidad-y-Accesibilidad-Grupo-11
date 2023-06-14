@@ -19,17 +19,39 @@
   justify-content: center;
 }
 
-
 .block-translucid-soft-purple {
   background-color: #DABFFF;
   position: center;
-  width: 30%;
-  height: 100%;
+  width: fit-content;
+  height: fit-content;
   opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.block-translucid-dark-purple {
+  background-color: #907AD6;
+  position: center;
+  width: fit-content;
+  height: fit-content;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .content-of-translucid-block {
-  width: auto;
-  height: auto;
   opacity: 1;
+}
+
+.custom-separation {
+  margin-top: 10%;
+  margin-bottom: 25%;
+}
+
+
+.btn-link {
+  text-decoration: none;
+  color: black;
 }
