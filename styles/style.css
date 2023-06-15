@@ -1,3 +1,7 @@
+.content {
+  padding: 5% 10%;
+}
+
 .custom-navbar {
   background-color: #4f518c;
 }
@@ -19,6 +23,16 @@
   justify-content: center;
 }
 
+.block-soft-purple {
+  background-color: #DABFFF;
+  position: center;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 .block-translucid-soft-purple {
   background-color: #DABFFF;
   position: center;
@@ -31,11 +45,11 @@
 }
 
 .block-translucid-dark-purple {
+  color: black;
   background-color: #907AD6;
   position: center;
   width: fit-content;
   height: fit-content;
-  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -50,8 +64,11 @@
   margin-bottom: 25%;
 }
 
-
 .btn-link {
   text-decoration: none;
   color: black;
+}
+
+.card {
+  height: 120%;
 }
