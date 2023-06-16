@@ -72,3 +72,8 @@
 .card {
   height: 120%;
 }
+
+#QuienesSomos {
+  text-align: justify;
+  text-justify: inter-word;
+}
