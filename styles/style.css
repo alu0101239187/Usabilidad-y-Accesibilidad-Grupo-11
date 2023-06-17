@@ -1,5 +1,5 @@
 .content {
-  padding: 5% 10%;
+  padding: 3% 10%;
 }
 
 .custom-navbar {
@@ -55,6 +55,16 @@
   align-items: center; 
 }
 
+.btn-dark-purple {
+  color: black;
+  background-color: #907AD6;
+  position: center;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center; 
+}
+
 .content-of-translucid-block {
   opacity: 1;
 }
@@ -71,6 +81,10 @@
 
 .card {
   height: 120%;
+}
+
+.row {
+  margin-bottom: 10%;
 }
 
 #QuienesSomos {
