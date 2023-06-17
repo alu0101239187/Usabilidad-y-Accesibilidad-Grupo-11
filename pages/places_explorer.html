@@ -1,200 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Laguneando - Explorador de lugares</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="icon" type="icon" href="../assets/images/purple_icon.png" />
-  </head>
 
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laguneando - Explorador de lugares</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="icon" type="icon" href="../assets/images/purple_icon.png" />
+</head>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-      <div class="container-fluid">
-        <img
-          src="../assets/images/white_icon.png"
-          alt="Icono Laguneando"
-          class="image logo"
-        />
-        <a class="navbar-brand text-white" href="../index.html">Laguneando</a>
-        <button
-          class="navbar-toggler border-0 collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Botón para expandir el menú"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="../index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Explorador de lugares</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="info.html">Información</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
 
-    <!-- Content -->
-    <div class="content">
-      <div id="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Explorador de lugares
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+      <img src="../assets/images/white_icon.png" alt="Icono Laguneando" class="image logo" />
+      <a class="navbar-brand text-white" href="../index.html">Laguneando</a>
+      <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Botón para expandir el menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
           </li>
-        </ol>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Explorador de lugares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="info.html">Información</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contacto</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <div class="d-flex justify-content-center d-flex align-items-center my-4">
-        <span>Filtrar: &nbsp;</span>
-        <a class="btn btn-primary btn-dark-purple rounded-pill">Todo</a>
-        <a class="btn rounded-pill">Sitios Bonitos</a>
-        <a class="btn rounded-pill">Hostelería</a>
-        <a class="btn rounded-pill">Entretenimiento</a>
-      </div>
+  <!-- Content -->
+  <div class="content">
+    <div id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Explorador de lugares
+        </li>
+      </ol>
+    </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <img
-              class="card-img-top img-fluid"
-              src="../assets/images/places_explorer/catedral1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Catedral de La Laguna</h5>
-              <p class="card-text">Catedral en la laguna</p>
-              <a href="#" class="btn btn-primary block-translucid-dark-purple"
-                >Más información...</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              class="card-img-top img-fluid"
-              src="../assets/images/places_explorer/teatroleal.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Teatro Leal</h5>
-              <p class="card-text">Teatro Leal</p>
-              <a href="#" class="btn btn-primary block-translucid-dark-purple"
-                >Más información...</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              class="card-img-top img-fluid"
-              src="../assets/images/places_explorer/concepcion2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Iglesia de La Concepción</h5>
-              <p class="card-text">La Concepción</p>
-              <a href="#" class="btn btn-primary block-translucid-dark-purple"
-                >Más información...</a
-              >
-            </div>
+    <div class="d-flex justify-content-center d-flex align-items-center my-4">
+      <span>Filtrar: &nbsp;</span>
+      <a class="btn btn-primary btn-dark-purple rounded-pill">Todo</a>
+      <a class="btn rounded-pill">Sitios Bonitos</a>
+      <a class="btn rounded-pill">Hostelería</a>
+      <a class="btn rounded-pill">Entretenimiento</a>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="../assets/images/places_explorer/catedral1.png"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Catedral de La Laguna</h5>
+            <p class="card-text">Catedral en la laguna</p>
+            <a href="#" class="btn btn-primary block-translucid-dark-purple">Más información...</a>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="../assets/images/places_explorer/catedral1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Catedral de La Laguna</h5>
-              <p class="card-text">Catedral en la laguna</p>
-              <a href="#" class="btn btn-primary block-translucid-dark-purple"
-                >Más información...</a
-              >
-            </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="../assets/images/places_explorer/teatroleal.png"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Teatro Leal</h5>
+            <p class="card-text">Teatro Leal</p>
+            <a href="#" class="btn btn-primary block-translucid-dark-purple">Más información...</a>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="../assets/images/places_explorer/teatroleal.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Teatro Leal</h5>
-              <p class="card-text">Teatro Leal</p>
-              <a href="#" class="btn btn-primary block-translucid-dark-purple"
-                >Más información...</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="../assets/images/places_explorer/concepcion2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Iglesia de La Concepción</h5>
-              <p class="card-text">La Concepción</p>
-              <a href="#" class="btn btn-primary block-translucid-dark-purple"
-                >Más información...</a
-              >
-            </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="../assets/images/places_explorer/concepcion2.png"
+            alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Iglesia de La Concepción</h5>
+            <p class="card-text">La Concepción</p>
+            <a href="#" class="btn btn-primary block-translucid-dark-purple">Más información...</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer text-center text-white custom-footer">
-      <div class="text-center p-3">
-        © 2023 Laguneando. Todos los derechos reservados
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="../assets/images/places_explorer/catedral1.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Catedral de La Laguna</h5>
+            <p class="card-text">Catedral en la laguna</p>
+            <a href="#" class="btn btn-primary block-translucid-dark-purple">Más información...</a>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="../assets/images/places_explorer/teatroleal.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Teatro Leal</h5>
+            <p class="card-text">Teatro Leal</p>
+            <a href="#" class="btn btn-primary block-translucid-dark-purple">Más información...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="../assets/images/places_explorer/concepcion2.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Iglesia de La Concepción</h5>
+            <p class="card-text">La Concepción</p>
+            <a href="#" class="btn btn-primary block-translucid-dark-purple">Más información...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center text-white custom-footer">
+    <div class="text-center p-3">
+      © 2023 Laguneando. Todos los derechos reservados
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laguneando - Información</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="icon" type="icon" href="../assets/images/purple_icon.png" />
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+      <img src="../assets/images/white_icon.png" alt="Icono Laguneando" class="image logo" />
+      <a class="navbar-brand text-white" href="../index.html">Laguneando</a>
+      <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Botón para expandir el menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="places_explorer.html">Explorador de lugares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="info.html">Información</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <div id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Contacto
+        </li>
+      </ol>
+    </div>
+    <div>
+      <h1>Contacto</h1>
+      <p>¡Contáctanos a través de nuestras redes sociales!</p>
+
+      <!-- Redes sociales -->
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../assets/icons/facebook_icon.png" alt="Enlace a Facebook de Laguneando" width="30"
+              height="30"></a>
+          Facebook
+        </li>
+        <li class="list-group-item">
+          <a target="_blank" tabindex="0">
+            <img src="../assets/icons/phone_icon.png" alt="Numero de contacto +34 999 99 99 99" width="30"
+              height="30"></a>
+          Teléfono +34 999 99 99 99
+        </li>
+        <li class="list-group-item">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../assets/icons/instagram_icon.png" alt="Enlace a Instagram de Laguneando" width="30"
+              height="30"></a>
+          Instagram
+        </li>
+      </ul>
+
+
+      <div class="container mt-5">
+        <h1>Formulario</h1>
+        <form>
+
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <div class="form-group" id="name">
+                <label for="nameInput">Nombre</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Introduce tu nombre">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group" id="last-name">
+                <label for="lastNameInput">Apellido</label>
+                <input type="text" class="form-control" id="lastNameInput" placeholder="Introduce tu apellido">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mb-2" id="mail">
+            <label for="emailInput">Correo electrónico</label>
+            <input type="email" class="form-control" id="mailInput" placeholder="Ej: example@gmail.com">
+          </div>
+
+          <div class="form-group mb-2" id="message">
+            <label for="messageInputContactForm">Mensaje</label>
+            <input type="password" class="form-control" id="messageInput" placeholder="Escribe tu mensaje aqui">
+          </div>
+
+          <button type="submit" id="formSendContact">Enviar</button>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center text-white custom-footer">
+    <div class="text-center p-3">
+      © 2023 Laguneando. Todos los derechos reservados
+    </div>
+  </footer>
+
+  <script src="../scripts/contact-form.js"></script>
+</body>
+
+</html>

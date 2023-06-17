@@ -91,3 +91,8 @@
   text-align: justify;
   text-justify: inter-word;
 }
+
+
+.error-message {
+  color: red;
+}
