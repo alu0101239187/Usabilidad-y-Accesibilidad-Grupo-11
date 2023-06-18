@@ -67,9 +67,4 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   message_error_display.appendChild(error_message)
   message_error_display.setAttribute("aria-live", "assertive")
 
-
-  
-
-
-    
 })
