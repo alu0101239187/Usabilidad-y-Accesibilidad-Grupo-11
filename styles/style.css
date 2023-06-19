@@ -44,7 +44,7 @@
   align-items: center; 
 }
 
-.block-translucid-dark-purple {
+.block-dark-purple {
   color: black;
   background-color: #907AD6;
   position: center;
@@ -58,6 +58,16 @@
 .btn-dark-purple {
   color: black;
   background-color: #907AD6;
+  position: center;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center; 
+}
+
+.btn-soft-purple {
+  color: black;
+  background-color: #DABFFF;
   position: center;
   width: fit-content;
   height: fit-content;
@@ -84,7 +94,7 @@
 }
 
 .row {
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 
 #QuienesSomos {

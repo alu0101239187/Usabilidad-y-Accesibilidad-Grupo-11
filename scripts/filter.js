@@ -1,4 +1,4 @@
-const json = {
+const JSON = {
   places: [
     {
       name: "Catedral de La Laguna",
@@ -39,13 +39,18 @@ const json = {
   ],
 };
 
+const ALL_FILTER = document.getElementById("all-filter");
+const CULTURE_FILTER = document.getElementById("culture-filter");
+const HOSTELRY_FILTER = document.getElementById("hostelry-filter");
+const ENTERTAINMENT_FILTER = document.getElementById("entertainment-filter");
+
 function addPlaces(place_type) {
   deletePlaces();
   const div = document.getElementById("places");
   var counter = 0;
   var row = document.createElement("div");
   row.className = "row";
-  json.places.forEach((place) => {
+  JSON.places.forEach((place) => {
     if (place.type === place_type || place_type === "all") {
       if (counter === 3) {
         div.appendChild(row);
@@ -64,7 +69,7 @@ function deletePlaces() {
 
   Array.prototype.slice.call(rows).forEach((row) => {
     row.remove();
-  })
+  });
 }
 
 function addCardToRow(row, place) {
@@ -97,26 +102,40 @@ function addCardToRow(row, place) {
   card_body.appendChild(description);
 
   const button = document.createElement("a");
-  button.className = "btn btn-primary block-translucid-dark-purple";
+  button.className = "btn btn-primary block-dark-purple";
   button.innerText = "Más información...";
   button.href = "#";
   card_body.appendChild(button);
 }
 
-document.getElementById("all-filter").addEventListener("click", (event) => {
+ALL_FILTER.addEventListener("click", (event) => {
   addPlaces("all");
+  ALL_FILTER.className = "btn btn-soft-purple rounded";
+  CULTURE_FILTER.className = "btn rounded";
+  HOSTELRY_FILTER.className = "btn rounded";
+  ENTERTAINMENT_FILTER.className = "btn rounded";
 });
 
-document.getElementById("culture-filter").addEventListener("click", (event) => {
+CULTURE_FILTER.addEventListener("click", (event) => {
   addPlaces("culture");
+  ALL_FILTER.className = "btn rounded";
+  CULTURE_FILTER.className = "btn btn-soft-purple rounded";
+  HOSTELRY_FILTER.className = "btn rounded";
+  ENTERTAINMENT_FILTER.className = "btn rounded";
 });
 
-document.getElementById("hostelry-filter").addEventListener("click", (event) => {
+HOSTELRY_FILTER.addEventListener("click", (event) => {
   addPlaces("hostelry");
+  ALL_FILTER.className = "btn rounded";
+  CULTURE_FILTER.className = "btn rounded";
+  HOSTELRY_FILTER.className = "btn btn-soft-purple rounded";
+  ENTERTAINMENT_FILTER.className = "btn rounded";
 });
 
-document.getElementById("entertainment-filter").addEventListener("click", (event) => {
+ENTERTAINMENT_FILTER.addEventListener("click", (event) => {
   addPlaces("entertainment");
+  ALL_FILTER.className = "btn rounded";
+  CULTURE_FILTER.className = "btn rounded";
+  HOSTELRY_FILTER.className = "btn rounded";
+  ENTERTAINMENT_FILTER.className = "btn btn-soft-purple rounded";
 });
-
-
