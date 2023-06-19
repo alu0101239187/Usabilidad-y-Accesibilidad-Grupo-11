@@ -13,28 +13,32 @@ const JSON = {
       type: "culture",
     },
     {
-      name: "Iglesia de La Concepción",
-      description: "La Concepción",
+      name: "Parroquia Matriz de Nuestra Señora de la Concepción",
+      description:
+        "Su emplazamiento en ese lugar lo estableció el Adelantado Fernández de Lugo tras la celebración de la festividad del Corpus en 1496. Fundada en 1511, es la parroquia matriz de la isla de Tenerife, pues de ella salieron todas las demás.",
       img_name: "concepcion2.png",
       type: "culture",
     },
     {
-      name: "Catedral de La Laguna 2",
-      description: "Catedral de La Laguna 2",
-      img_name: "catedral1.png",
-      type: "hostelry",
+      name: "Museo de Historia y Antropología de Tenerife",
+      description:
+        "El Museo de Historia y Antropología de Tenerife pertenece al Organismo Autónomo de Museos y Centros del Cabildo de Tenerife. Fue inaugurado en diciembre de 1993 en el inmueble conocido como Casa Lercaro, en la calle San Agustín de San Cristóbal de La Laguna.",
+      img_name: "20210306_161646_HDR.jpg",
+      type: "culture",
     },
     {
-      name: "Teatro Leal 2",
-      description: "Teatro Leal 2",
-      img_name: "teatroleal.png",
-      type: "hostelry",
+      name: "Museo de La Ciencia y El Cosmos",
+      description:
+        "El museo de las Ciencias y el Cosmos pertenece al Organismo Autónomo de Museos y Centros del Cabildo de Tenerife. Fue inaugurado en 1993 por iniciativa del propio Cabildo y del Instituto de Astrofísica de Canarias.",
+      img_name: "IMG_20220716_171348.jpg",
+      type: "culture",
     },
     {
-      name: "Iglesia de La Concepción 2",
-      description: "La Concepción 2",
-      img_name: "concepcion2.png",
-      type: "entertainment",
+      name: "Real Santuario del Santísimo Cristo de La Laguna",
+      description:
+        "El Real Santuario es el Convento Franciscano de San Miguel de las Victorias y tiene la categoría de Bien de Interés Cultural. Junto al Real Santuario se encuentra la Plaza del Cristo de La Laguna.",
+      img_name: "La_Laguna_BW_1.jpg",
+      type: "culture",
     },
   ],
 };
@@ -42,7 +46,7 @@ const JSON = {
 const ALL_FILTER = document.getElementById("all-filter");
 const CULTURE_FILTER = document.getElementById("culture-filter");
 const HOSTELRY_FILTER = document.getElementById("hostelry-filter");
-const ENTERTAINMENT_FILTER = document.getElementById("entertainment-filter");
+const NATURE_FILTER = document.getElementById("nature-filter");
 
 function addPlaces(place_type) {
   deletePlaces();
@@ -92,12 +96,12 @@ function addCardToRow(row, place) {
   card.appendChild(card_body);
 
   const title = document.createElement("h5");
-  title.className = "card-title";
+  title.className = "card-title justified";
   title.innerText = place.name;
   card_body.appendChild(title);
 
   const description = document.createElement("p");
-  description.className = "card-text";
+  description.className = "card-text justified";
   description.innerText = place.description;
   card_body.appendChild(description);
 
@@ -110,32 +114,32 @@ function addCardToRow(row, place) {
 
 ALL_FILTER.addEventListener("click", (event) => {
   addPlaces("all");
-  ALL_FILTER.className = "btn btn-soft-purple rounded";
-  CULTURE_FILTER.className = "btn rounded";
-  HOSTELRY_FILTER.className = "btn rounded";
-  ENTERTAINMENT_FILTER.className = "btn rounded";
+  ALL_FILTER.className = "btn btn-soft-purple rounded-pill";
+  CULTURE_FILTER.className = "btn";
+  HOSTELRY_FILTER.className = "btn";
+  NATURE_FILTER.className = "btn";
 });
 
 CULTURE_FILTER.addEventListener("click", (event) => {
   addPlaces("culture");
-  ALL_FILTER.className = "btn rounded";
-  CULTURE_FILTER.className = "btn btn-soft-purple rounded";
-  HOSTELRY_FILTER.className = "btn rounded";
-  ENTERTAINMENT_FILTER.className = "btn rounded";
+  ALL_FILTER.className = "btn";
+  CULTURE_FILTER.className = "btn btn-soft-purple rounded-pill";
+  HOSTELRY_FILTER.className = "btn";
+  NATURE_FILTER.className = "btn";
 });
 
 HOSTELRY_FILTER.addEventListener("click", (event) => {
   addPlaces("hostelry");
-  ALL_FILTER.className = "btn rounded";
-  CULTURE_FILTER.className = "btn rounded";
-  HOSTELRY_FILTER.className = "btn btn-soft-purple rounded";
-  ENTERTAINMENT_FILTER.className = "btn rounded";
+  ALL_FILTER.className = "btn";
+  CULTURE_FILTER.className = "btn";
+  HOSTELRY_FILTER.className = "btn btn-soft-purple rounded-pill";
+  NATURE_FILTER.className = "btn";
 });
 
-ENTERTAINMENT_FILTER.addEventListener("click", (event) => {
+NATURE_FILTER.addEventListener("click", (event) => {
   addPlaces("entertainment");
-  ALL_FILTER.className = "btn rounded";
-  CULTURE_FILTER.className = "btn rounded";
-  HOSTELRY_FILTER.className = "btn rounded";
-  ENTERTAINMENT_FILTER.className = "btn btn-soft-purple rounded";
+  ALL_FILTER.className = "btn";
+  CULTURE_FILTER.className = "btn";
+  HOSTELRY_FILTER.className = "btn";
+  NATURE_FILTER.className = "btn btn-soft-purple rounded-pill";
 });
