@@ -90,18 +90,21 @@
 }
 
 .card {
-  height: 120%;
+  height: 105%;
+}
+
+.card-title {
+  height: 20%;
 }
 
 .row {
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 
 #QuienesSomos {
   text-align: justify;
   text-justify: inter-word;
 }
-
 
 .error-message {
   color: red;
