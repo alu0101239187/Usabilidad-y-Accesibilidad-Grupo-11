@@ -96,3 +96,11 @@
 .error-message {
   color: red;
 }
+
+.info-with-bg {
+  background-image: url('../assets/images/mosaico_lila.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
