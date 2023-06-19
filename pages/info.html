@@ -51,6 +51,7 @@
     </nav>
 
     <!-- Content -->
+    <header class="info-with-bg ">
     <div class="content">
       <div id="breadcrumb">
         <ol class="breadcrumb">
@@ -60,7 +61,7 @@
           </li>
         </ol>
       </div>
-      <h1>¿Quiénes somos?</h1>
+      <h1 class="mt-5 mb-4">¿Quiénes somos?</h1>
       <div class="d-flex justify-content-center">
         <p id="QuienesSomos">
             Somos un equipo apasionado por compartir la belleza y los tesoros ocultos de la Laguna. Nuestra misión es guiar a los visitantes a través de una experiencia
@@ -69,52 +70,61 @@
             nuestro amor por esta hermosa área y esperamos que encuentres inspiración y disfrute al explorar los destinos que destacamos en nuestra página web.
         </p>
       </div>
-      <h1>FAQ</h1>
-      <div class="btn-group-vertical gap-2" role="group">
-        <div class="btn-group" role="group">
-          <button class="btn btn-lg text-start btn-outline-dark" style='width:675px' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ¿Hace falta reservar?
-          </button>
-          <button class="btn dropdown-toggle text-end btn-outline-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </button>
-          <ul class="dropdown-menu">
-            <p>Muchos lugares de la Laguna no requieren de reserva, pero en temporada alta es recomendable reservar.</p>
-          </ul>
+      <h1 class="mt-5 mb-4">FAQ</h1>
+
+      <div class="accordion mb-5" id="accordionFAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+              ¿Hace falta reservar?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Muchos lugares de la Laguna no requieren de reserva, pero en temporada alta es recomendable reservar.
+            </div>
+          </div>
         </div>
-        <div class="btn-group" role="group">
-          <button class="btn btn-lg text-start btn-outline-dark" style='width:675px' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ¿Cuándo son las mejores fechas para visitar la Laguna?
-          </button>
-          <button class="btn dropdown-toggle text-end btn-outline-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </button>
-          <ul class="dropdown-menu">
-            <p>Canarias es conocido por su buen clima y por tanto se puede disfrutar de zonas como la Laguna durante todo el año. 
-                Sin embargo, esta es conocida por su humedad y en las fechas de invierno puede las temperaturas pueden llegar a ser imprevicibles y no tan cálidas.</p>
-          </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              ¿Cuándo son las mejores fechas para visitar la Laguna?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Canarias es conocido por su buen clima y por tanto se puede disfrutar de zonas como la Laguna durante todo el año. 
+                Sin embargo, esta es conocida por su humedad y en las fechas de invierno puede las temperaturas pueden llegar a ser imprevicibles y no tan cálidas.
+            </div>
+          </div>
         </div>
-        <div class="btn-group" role="group">
-          <button class="btn btn-lg text-start btn-outline-dark" style='width:675px' type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ¿Se podría ver la Laguna en un día?
-          </button>
-          <button class="btn dropdown-toggle text-end btn-outline-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </button>
-          <ul class="dropdown-menu">
-            <p>Si bien es completamente posible visitar la Laguna en un día, es recomendable tomarselo con calma y repartirse los días para disfrutar de la tranquilidad que se transmite.</p>
-          </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              ¿Se podría ver la Laguna en un día?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Si bien es completamente posible visitar la Laguna en un día, es recomendable tomarselo con calma y repartirse los días para disfrutar de la tranquilidad que se transmite.
+            </div>
+          </div>
         </div>
-        <div class="btn-group" role="group">
-          <button class="btn btn-lg text-start btn-outline-dark" style='width:675px'  type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-            ¿Qué sitios son los más recomendables para llevar a los más pequeños?
-          </button>
-          <button class="btn dropdown-toggle text-end btn-outline-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </button>
-          <ul class="dropdown-menu">
-            <p>Hay museos muy interesantes en la zona y que permiten la interacción con el visitante. Estos son un disfrute para toda la familia.</p>
-          </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              ¿Qué sitios son los más recomendables para llevar a los más pequeños?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Hay museos muy interesantes en la zona y que permiten la interacción con el visitante. Estos son un disfrute para toda la familia.
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
+  </header>
     <!-- Footer -->
     <footer class="footer text-center text-white custom-footer">
       <div class="text-center p-3">
