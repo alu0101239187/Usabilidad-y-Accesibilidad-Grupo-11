@@ -114,3 +114,8 @@
   display: flex;
   justify-content: center;
 }
+
+
+.justified-text {
+  text-align: justify;
+}
