@@ -3,7 +3,7 @@ const JSON = {
     {
       name: "Catedral de San Cristóbal de La Laguna",
       description:
-        "La Santa Iglesia Catedral de San Cristóbal de La Laguna​ o Santa Iglesia Catedral de Nuestra Señora de Los Remedios es una catedral neogótica en su cuerpo principal y neoclásica en la fachada, sede de la Diócesis de San Cristóbal de La Laguna.",
+        "La Santa Iglesia Catedral de San Cristóbal de La Laguna o Santa Iglesia Catedral de Nuestra Señora de Los Remedios es una catedral neogótica en su cuerpo principal y neoclásica en la fachada, sede de la Diócesis de San Cristóbal de La Laguna.",
       img_name: "catedral.png",
       type: "culture",
     },
@@ -174,7 +174,7 @@ function addCardToRow(row, place) {
 
   const img = document.createElement("img");
   img.className = "card-img-top img-fluid";
-  img.src = `../assets/images/places_explorer/${place.img_name}`;
+  img.src = `../assets/images/places/${place.img_name}`;
   img.alt = place.name;
   card.appendChild(img);
 
@@ -182,10 +182,10 @@ function addCardToRow(row, place) {
   card_body.className = "card-body";
   card.appendChild(card_body);
 
-  const title = document.createElement("h5");
-  title.className = "card-title text-center align-text-top";
-  title.innerText = place.name;
-  card_body.appendChild(title);
+  const card_title = document.createElement("h5");
+  card_title.className = "card-title text-center align-text-top";
+  card_title.innerText = place.name;
+  card_body.appendChild(card_title);
 
   const description = document.createElement("p");
   description.className = "card-text justified-text";
