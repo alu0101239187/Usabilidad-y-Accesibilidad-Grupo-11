@@ -185,12 +185,14 @@ function addCardToRow(row, place) {
   const card_title = document.createElement("h5");
   card_title.className = "card-title text-center align-text-top";
   card_title.innerText = place.name;
+  card_title.tabIndex = 0;
   card_body.appendChild(card_title);
 
-  const description = document.createElement("p");
-  description.className = "card-text justified-text";
-  description.innerText = place.description;
-  card_body.appendChild(description);
+  const card_description = document.createElement("p");
+  card_description.className = "card-text justified-text";
+  card_description.innerText = place.description;
+  card_description.tabIndex = 0;
+  card_body.appendChild(card_description);
 
   const button = document.createElement("a");
   button.className = "btn btn-primary block-dark-purple";
@@ -202,31 +204,31 @@ function addCardToRow(row, place) {
 ALL_FILTER.addEventListener("click", (event) => {
   addPlaces("all");
   ALL_FILTER.className = "btn btn-soft-purple rounded-pill";
-  CULTURE_FILTER.className = "btn";
-  HOSTELRY_FILTER.className = "btn";
-  NATURE_FILTER.className = "btn";
+  CULTURE_FILTER.className = "btn rounded-pill";
+  HOSTELRY_FILTER.className = "btn rounded-pill";
+  NATURE_FILTER.className = "btn rounded-pill";
 });
 
 CULTURE_FILTER.addEventListener("click", (event) => {
   addPlaces("culture");
-  ALL_FILTER.className = "btn";
+  ALL_FILTER.className = "btn rounded-pill";
   CULTURE_FILTER.className = "btn btn-soft-purple rounded-pill";
-  HOSTELRY_FILTER.className = "btn";
-  NATURE_FILTER.className = "btn";
+  HOSTELRY_FILTER.className = "btn rounded-pill";
+  NATURE_FILTER.className = "btn rounded-pill";
 });
 
 HOSTELRY_FILTER.addEventListener("click", (event) => {
   addPlaces("hostelry");
-  ALL_FILTER.className = "btn";
-  CULTURE_FILTER.className = "btn";
+  ALL_FILTER.className = "btn rounded-pill";
+  CULTURE_FILTER.className = "btn rounded-pill";
   HOSTELRY_FILTER.className = "btn btn-soft-purple rounded-pill";
-  NATURE_FILTER.className = "btn";
+  NATURE_FILTER.className = "btn rounded-pill";
 });
 
 NATURE_FILTER.addEventListener("click", (event) => {
   addPlaces("nature");
-  ALL_FILTER.className = "btn";
-  CULTURE_FILTER.className = "btn";
-  HOSTELRY_FILTER.className = "btn";
+  ALL_FILTER.className = "btn rounded-pill";
+  CULTURE_FILTER.className = "btn rounded-pill";
+  HOSTELRY_FILTER.className = "btn rounded-pill";
   NATURE_FILTER.className = "btn btn-soft-purple rounded-pill";
 });
