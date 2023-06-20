@@ -59,12 +59,17 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   const message_error_display = document.getElementById("message");
   const error_message = document.createElement("p");
   if( message.value === "") {
-    error_message.innerText = `* Debes introducir un correo`;
+    error_message.innerText = `* Debes introducir un mensaje`;
     error_message.className = "error-message";
     error_message.id = "message-error";
     accepted = false;
   }
   message_error_display.appendChild(error_message)
   message_error_display.setAttribute("aria-live", "assertive")
+
+  if(accepted) {
+    alert("Se ha enviado el formulario.");
+    document.getElementById("formSendContact").reset();
+  }
 
 })
