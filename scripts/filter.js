@@ -5,6 +5,7 @@ const JSON = {
       description:
         "La Santa Iglesia Catedral de San Cristóbal de La Laguna o Santa Iglesia Catedral de Nuestra Señora de Los Remedios es una catedral neogótica en su cuerpo principal y neoclásica en la fachada, sede de la Diócesis de San Cristóbal de La Laguna.",
       img_name: "catedral.png",
+      href: "../pages/places/catedral_de_la_laguna.html",
       type: "culture",
     },
     {
@@ -12,6 +13,7 @@ const JSON = {
       description:
         "El Teatro Leal es un edificio situado en la calle Obispo Rey Redondo en la ciudad de San Cristóbal de La Laguna. Fue construido por orden de Antonio Leal en 1915, con planos del arquitecto Antonio Pintor Ocete.",
       img_name: "teatro_leal.png",
+      href: "#",
       type: "culture",
     },
     {
@@ -19,6 +21,7 @@ const JSON = {
       description:
         "Su emplazamiento en ese lugar lo estableció el Adelantado Fernández de Lugo tras la celebración de la festividad del Corpus en 1496. Fundada en 1511, es la parroquia matriz de la isla de Tenerife, pues de ella salieron todas las demás.",
       img_name: "concepcion.png",
+      href: "#",
       type: "culture",
     },
     {
@@ -33,6 +36,7 @@ const JSON = {
       description:
         "El museo de las Ciencias y el Cosmos pertenece al Organismo Autónomo de Museos y Centros del Cabildo de Tenerife. Fue inaugurado en 1993 por iniciativa del propio Cabildo y del Instituto de Astrofísica de Canarias.",
       img_name: "museo_de_la_ciencia_y_el_cosmos.jpg",
+      href: "#",
       type: "culture",
     },
     {
@@ -40,6 +44,7 @@ const JSON = {
       description:
         "El Real Santuario es el Convento Franciscano de San Miguel de las Victorias y tiene la categoría de Bien de Interés Cultural. Junto al Real Santuario se encuentra la Plaza del Cristo de La Laguna.",
       img_name: "santuario_del_cristo.jpg",
+      href: "#",
       type: "culture",
     },
     {
@@ -47,6 +52,7 @@ const JSON = {
       description:
         "Comida de comer como papas fritas, hamburguesas y bocadillos.\n\nHorario:\n    Lunes a sábado: 9:00 - 23:00\nDomingo: 11:00 - 23:00",
       img_name: "bachata.jpg",
+      href: "#",
       type: "hostelry",
     },
     {
@@ -54,6 +60,7 @@ const JSON = {
       description:
         "Restaurante en una casa del S. XVIII con detalles de piedra y madera, y platos típicos canarios.\n\nHorario:\n Miércoles a lunes: 10:00 - 23:30\nDomingo: 10:00 - 18:00",
       img_name: "patio_canario.jpg",
+      href: "#",
       type: "hostelry",
     },
     {
@@ -61,6 +68,7 @@ const JSON = {
       description:
         "Croquetas.\n\nHorario:\n Miércoles a viernes: 13:00 - 16:30, 20:00 - 22:30\nSábado: 12:00 - 23:30\nDomingo: 12:00 - 22:30",
       img_name: "cocreteria.jpg",
+      href: "#",
       type: "hostelry",
     },
     {
@@ -68,6 +76,7 @@ const JSON = {
       description:
         "Tapas, carnes, hamburguesas, postres y vinos en un restaurante lleno de plantas y de ambiente desenfadado.\n\nHorario:\nJueves a martes: 13:00 - 16:30, 20:00 - 23:30",
       img_name: "gulagu.jpg",
+      href: "#",
       type: "hostelry",
     },
     {
@@ -75,6 +84,7 @@ const JSON = {
       description:
         "Crepes y otras cosas.\n\nHorario:\n Domingo a jueves: 10:00 - 22:30\nViernes y sábado: 10:00 - 23:00",
       img_name: "creperia_les_iles.jpg",
+      href: "#",
       type: "hostelry",
     },
     {
@@ -82,6 +92,7 @@ const JSON = {
       description:
         "Restaurante de comida mexicana de México.\n\nHorario:\nTodos los días: 12:00 - 1:00",
       img_name: "limon_y_sal.jpg",
+      href: "#",
       type: "hostelry",
     },
     {
@@ -89,6 +100,7 @@ const JSON = {
       description:
         "El mirador Pico del Inglés tiene unas vistas impresionantes del Parque Rural de Anaga hacia un lado y de la isla de Tenerife hacia el otro. Es aconsejable ir un día despejado aunque eso en Tenerife pronto aprendes que es imposible de predecir pues el tiempo cambia a cada rato.",
       img_name: "pico_del_ingles.jpg",
+      href: "#",
       type: "nature",
     },
     {
@@ -96,6 +108,7 @@ const JSON = {
       description:
         "Punta del Hidalgo está situada al noroeste del macizo de Anaga, estando asentada en su mayor parte sobre una plataforma costera creada hace unos cien mil años por la erupción del conocido como volcán de El Morro o de Las Rozas. ​ También es la punta más saliente de la isla de Tenerife.",
       img_name: "punta_del_hidalgo.jpg",
+      href: "#",
       type: "nature",
     },
     {
@@ -103,6 +116,7 @@ const JSON = {
       description:
         "El parque rural de Anaga es un espacio natural protegido localizado en el Macizo de Anaga, en la isla de Tenerife, Canarias que fue declarado el 9 de junio de 2015 Reserva de la Biosfera y es el lugar que cuenta con mayor cantidad de endemismos de Europa.​",
       img_name: "anaga.jpg",
+      href: "#",
       type: "nature",
     },
     {
@@ -110,6 +124,7 @@ const JSON = {
       description:
         "El Parque de La Vega es uno de los más famosos de la ciudad de La Laguna, declarada Patrimonio Histórico de la Humanidad por la Unesco. Muchos laguneros acuden, sobre todo los fines de semana, para disfrutar de un agradable día entre árboles, plantas exóticas y zonas de recreo infantiles y deportivas.",
       img_name: "parque_la_vega.jpg",
+      href: "#",
       type: "nature",
     },
     {
@@ -117,6 +132,7 @@ const JSON = {
       description:
         "Se trata de un tipo de bosque nuboso subtropical, propio de zonas húmedas, cálidas y normalmente sin heladas, con grandes árboles y plantas trepadoras.",
       img_name: "sendero_de_los_sentidos.jpg",
+      href: "#",
       type: "nature",
     },
     {
@@ -124,6 +140,7 @@ const JSON = {
       description:
         "El mirador de la Cruz del Carmen es el más importante del Parque Rural de Anaga, pues es el punto de partida de las distintas rutas de senderismo que hay señalizadas dentro de este parque natural.",
       img_name: "cruz_del_carmen.jpg",
+      href: "#",
       type: "nature",
     },
   ],
@@ -197,7 +214,7 @@ function addCardToRow(row, place) {
   const button = document.createElement("a");
   button.className = "btn btn-primary block-dark-purple";
   button.innerText = "Más información...";
-  button.href = "#";
+  button.href = place.href;
   card_body.appendChild(button);
 }
 
