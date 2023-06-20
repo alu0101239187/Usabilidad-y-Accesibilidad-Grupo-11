@@ -74,10 +74,6 @@
   align-items: center; 
 }
 
-.content-of-translucid-block {
-  opacity: 1;
-}
-
 .custom-separation {
   margin-top: 10%;
   margin-bottom: 25%;
@@ -102,14 +98,6 @@
 
 .error-message {
   color: red;
-}
-
-.info-with-bg {
-  background-image: url('../assets/images/mosaico_lila.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
 }
 
 .justified-text {
