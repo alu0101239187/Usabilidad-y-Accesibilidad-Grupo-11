@@ -1,104 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Laguneando - Explorador de lugares</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="icon" type="icon" href="../assets/images/purple_icon.png" />
-  </head>
 
-  <body onload='addPlaces("all")'>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laguneando - Explorador de lugares</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="icon" type="icon" href="../assets/images/purple_icon.png" />
+</head>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-      <div class="container-fluid">
-        <img
-          src="../assets/images/white_icon.png"
-          alt="Icono Laguneando"
-          class="image logo"
-        />
-        <a class="navbar-brand text-white" href="../index.html">Laguneando</a>
-        <button
-          class="navbar-toggler border-0 collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Botón para expandir el menú"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="../index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Explorador de lugares</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="info.html">Información</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body onload='addPlaces("all")'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
 
-    <!-- Content -->
-    <div class="content">
-      <div id="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Explorador de lugares
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+      <img src="../assets/images/white_icon.png" alt="Icono Laguneando" class="image logo" />
+      <a class="navbar-brand text-white" href="../index.html">Laguneando</a>
+      <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Botón para expandir el menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
           </li>
-        </ol>
-      </div>
-
-      <div class="d-flex justify-content-center d-flex align-items-center my-4">
-        <span>Filtrar: &nbsp;</span>
-        <button type="button" class="btn btn-soft-purple rounded-pill" id="all-filter"
-          >Todo</button
-        >
-        <button type="button" class="btn rounded-pill" id="culture-filter">Cultura</button>
-        <button type="button" class="btn rounded-pill" id="hostelry-filter">Hostelería</button>
-        <button type="button" class="btn rounded-pill" id="nature-filter">Naturaleza</button>
-      </div>
-
-      <div id="places">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Explorador de lugares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="info.html">Información</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contacto</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- Footer -->
-    <footer class="footer text-center text-white custom-footer">
-      <div class="text-center p-3">
-        © 2023 Laguneando. Todos los derechos reservados
-      </div>
-    </footer>
-    <script src="../scripts/filter.js"" type="text/javascript""></script>
-  </body>
+  <!-- Content -->
+  <div class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html" aria-label="Enlace a página de inicio">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page" aria-label="Página actual Explorador de lugares"
+          tabindex="0">
+          Explorador de lugares
+        </li>
+      </ol>
+    </nav>
+
+    <div class="d-flex justify-content-center d-flex align-items-center my-4">
+      <span tabindex="0" aria-label="Filtros">Filtrar: &nbsp;</span>
+      <button type="button" class="btn btn-soft-purple rounded-pill" id="all-filter"
+        aria-label="Mostrar todo">Todo</button>
+      <button type="button" class="btn rounded-pill" id="culture-filter"
+        aria-label="Mostrar relacionado con cultura">Cultura</button>
+      <button type="button" class="btn rounded-pill" id="hostelry-filter"
+        aria-label="Mostrar relacionado con hostelería">Hostelería</button>
+      <button type="button" class="btn rounded-pill" id="nature-filter"
+        aria-label="Mostrar relacionado con naturaleza    ">Naturaleza</button>
+    </div>
+
+    <div id="places">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center text-white custom-footer">
+    <div class="text-center p-3">
+      © 2023 Laguneando. Todos los derechos reservados
+    </div>
+  </footer>
+  <script src="../scripts/filter.js"" type=" text/javascript""></script>
+</body>
+
 </html>

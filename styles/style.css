@@ -54,6 +54,12 @@
   align-items: center; 
 }
 
+.alert-success {
+  background-color: #c8e6c9;
+  color: #388e3c;
+  padding: 10px;
+}
+
 .btn-dark-purple {
   color: black;
   background-color: #907AD6;

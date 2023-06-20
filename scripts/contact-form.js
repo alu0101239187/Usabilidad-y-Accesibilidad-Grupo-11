@@ -16,7 +16,7 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   let accepted = true;
 
 
-
+  // Comprobar que ha escrito un nombre 
   const name = document.getElementById("nameInput");
   const name_error_display = document.getElementById("name");
   const error_name = document.createElement("p");
@@ -30,6 +30,8 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   name_error_display.appendChild(error_name)
   name_error_display.setAttribute("aria-live", "assertive")
 
+
+  // Comprobar que ha escrito un apellido 
   const lastName = document.getElementById("lastNameInput");
   const lastName_error_display = document.getElementById("last-name");
   const error_lastName = document.createElement("p");
@@ -42,7 +44,7 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   lastName_error_display.appendChild(error_lastName)
   lastName_error_display.setAttribute("aria-live", "assertive")
 
-
+  // Comprobar que ha escrito un correo electrónico válido
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const mail = document.getElementById("mailInput");
   const mail_error_display = document.getElementById("mail");
@@ -61,7 +63,7 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   mail_error_display.appendChild(error_mail)
   mail_error_display.setAttribute("aria-live", "assertive")
 
-
+  // Comprobar que ha escrito un mensaje
   const message = document.getElementById("messageInput");
   const message_error_display = document.getElementById("message");
   const error_message = document.createElement("p");
@@ -75,8 +77,16 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   message_error_display.setAttribute("aria-live", "assertive")
 
   if(accepted) {
-    alert("Se ha enviado el formulario.");
-    document.getElementById("contactForm").reset();
+
+  // Crear elemento de alerta
+  const alertElement = document.createElement("div");
+  alertElement.innerText = "Se ha enviado el formulario con éxito.";
+  alertElement.setAttribute("aria-live", "assertive");
+  alertElement.className = "alert-success"
+  // Agregar elemento al DOM
+  document.getElementById("contactForm").appendChild(alertElement);
+  // Resetear el formulario
+  document.getElementById("contactForm").reset();
   }
 
 })

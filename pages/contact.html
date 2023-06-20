@@ -48,12 +48,13 @@
 
   <!-- Content -->
   <div class="content">
-    <div id="breadcrumb">
+    <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        <li class="breadcrumb-item"><a href="../index.html" aria-label="Enlace a página de inicio">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page" aria-label="Página actual Contacto" tabindex="0">Contacto
+        </li>
       </ol>
-    </div>
+    </nav>
 
     <div>
       <h1 class="mt-5 mb-4">Contacto</h1>
@@ -104,25 +105,29 @@
             <div class="col-sm-6">
               <div class="form-group" id="name">
                 <label for="nameInput">Nombre</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Introduce tu nombre" />
+                <input type="text" class="form-control" id="nameInput" placeholder="Juan"
+                  aria-label="Introduce tu nombre" />
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group" id="last-name">
                 <label for="lastNameInput">Apellido</label>
-                <input type="text" class="form-control" id="lastNameInput" placeholder="Introduce tu apellido" />
+                <input type="text" class="form-control" id="lastNameInput" placeholder="García"
+                  aria-label="Introduce tu apellido" />
               </div>
             </div>
           </div>
 
           <div class="form-group mb-2" id="mail">
             <label for="emailInput">Correo electrónico</label>
-            <input type="email" class="form-control" id="mailInput" placeholder="Ej: example@gmail.com" />
+            <input type="email" class="form-control" id="mailInput" placeholder="example@gmail.com"
+              aria-label="Introduce tu correo electrónico" />
           </div>
 
           <div class="form-group mb-3" id="message">
             <label for="messageInputContactForm">Mensaje</label>
-            <input type="text" class="form-control" id="messageInput" placeholder="Escribe tu mensaje" />
+            <input type="text" class="form-control" id="messageInput" placeholder="Te recomeniendo que..."
+              aria-label="Introduce el mensaje que deseas enviar" />
           </div>
 
           <button type="submit" id="formSendContact">Enviar</button>
