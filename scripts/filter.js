@@ -29,6 +29,7 @@ const JSON = {
       description:
         "El Museo de Historia y Antropología de Tenerife pertenece al Organismo Autónomo de Museos y Centros del Cabildo de Tenerife. Fue inaugurado en diciembre de 1993 en el inmueble conocido como Casa Lercaro, en la calle San Agustín de San Cristóbal de La Laguna.",
       img_name: "museo_de_historia_y_antropologia.jpg",
+      href: "#",
       type: "culture",
     },
     {

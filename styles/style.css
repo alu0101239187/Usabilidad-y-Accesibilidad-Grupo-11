@@ -34,11 +34,10 @@
 }
 
 .block-translucid-soft-purple {
-  background-color: #DABFFF;
+  background: rgb(218, 191, 255, .8);
   position: center;
   width: fit-content;
   height: fit-content;
-  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center; 
