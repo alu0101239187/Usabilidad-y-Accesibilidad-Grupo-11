@@ -42,11 +42,18 @@ document.getElementById("formSendContact").addEventListener("click", event => {
   lastName_error_display.appendChild(error_lastName)
   lastName_error_display.setAttribute("aria-live", "assertive")
 
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const mail = document.getElementById("mailInput");
   const mail_error_display = document.getElementById("mail");
   const error_mail = document.createElement("p");
   if( mail.value === "") {
     error_mail.innerText = `* Debes introducir un correo`;
+    error_mail.className = "error-message";
+    error_mail.id = "mail-error";
+    accepted = false;
+  } else if (!emailRegex.test(mail.value)) {
+    error_mail.innerText = `* Debes introducir un correo válido`;
     error_mail.className = "error-message";
     error_mail.id = "mail-error";
     accepted = false;
@@ -69,7 +76,7 @@ document.getElementById("formSendContact").addEventListener("click", event => {
 
   if(accepted) {
     alert("Se ha enviado el formulario.");
-    document.getElementById("formSendContact").reset();
+    document.getElementById("contactForm").reset();
   }
 
 })
