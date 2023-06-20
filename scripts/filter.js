@@ -4,7 +4,7 @@ const JSON = {
       name: "Catedral de San Cristóbal de La Laguna",
       description:
         "La Santa Iglesia Catedral de San Cristóbal de La Laguna o Santa Iglesia Catedral de Nuestra Señora de Los Remedios es una catedral neogótica en su cuerpo principal y neoclásica en la fachada, sede de la Diócesis de San Cristóbal de La Laguna.",
-      img_name: "catedral.png",
+      img_name: "catedral_de_la_laguna/catedral.png",
       href: "../pages/places/catedral_de_la_laguna.html",
       type: "culture",
     },
